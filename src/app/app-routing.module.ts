@@ -12,17 +12,22 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'login',
-    loadChildren: () => import('../../pages/login/login.module').then( m => m.LoginPageModule)
+    path: 'intro',
+    loadChildren: () => import('./pages/intro/intro.module').then( m => m.IntroPageModule)
   },
   {
-    path: 'register',
-    loadChildren: () => import('../../pages/register/register.module').then( m => m.RegisterPageModule)
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'resgister',
+    loadChildren: () => import('./pages/resgister/resgister.module').then( m => m.ResgisterPageModule)
   },
   {
     path: 'question-start',
-    loadChildren: () => import('../../pages/question-start/question-start.module').then( m => m.QuestionStartPageModule)
+    loadChildren: () => import('./pages/question-start/question-start.module').then( m => m.QuestionStartPageModule)
   }
+
 ];
 
 @NgModule({
