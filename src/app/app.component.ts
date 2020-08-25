@@ -17,6 +17,21 @@ export class AppComponent implements OnInit {
       url: '/',
       icon: 'home'
     },
+    {
+      title: 'Login',
+      url: '/login',
+      icon: 'log-in'
+    },
+    {
+      title: 'Register',
+      url: '/register',
+      icon: 'person-add'
+    },
+    {
+      title: 'Question Start',
+      url: '/question-start',
+      icon: 'help-buoy'
+    },
   ];
   public labels = [];
 
