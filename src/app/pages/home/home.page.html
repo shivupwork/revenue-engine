@@ -7,15 +7,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home Page Title</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content style="background-image: url(assets/images/banner.jpg)" class="ion-padding">
+  <ion-grid class="ion-text-center ion-padding-vertical">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Revenue Engine">
+    </div>
+    <h1>Never Leave Money on The Table</h1>
+    <p>The Revenue Engine APP is a Savings APP that allows users to quickly calculate their potential tax incentive
+      savings and service provider fee reductions using simple math functions. The APP is geared to businesses in the
+      U.S.</p>
+      <br />
+      <ion-button class="button-medium" color="primary" class="ion-color-primary">
+        Let's Go
+      </ion-button>
+  </ion-grid> 
 </ion-content>

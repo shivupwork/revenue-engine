@@ -1,0 +1,10 @@
+ion-content{
+    --background: #f9f8f8;
+    .login-content{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        height: 100%;
+    }
+}
