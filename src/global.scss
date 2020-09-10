@@ -52,6 +52,7 @@
   .button-medium{
       height: 40px;
       min-width: 120px;
+      --ion-color-contrast: #fff !important;
   }
 
   ion-item{
@@ -61,19 +62,20 @@
   .bg-gray-light {
       background-color: #f9f8f8;
   }
-  /*
+
+/*
 * header
 */
 
-.header {
+ion-header {
   ion-buttons {
       margin-left: 10px;
+      color: #ffffff;
   }
   ion-title {
-      // text-align: center;
       font-size: 22px;
       font-weight: 700;
-      color: #000000;
+      color: #ffffff;
       &.md {
           width: calc(100% - 58px);
           padding: 0;
@@ -145,5 +147,8 @@
         }
       }
     }
-  }
+  }  
+  ion-button{
+    --ion-color-contrast: #fff !important;
+ }
 }
