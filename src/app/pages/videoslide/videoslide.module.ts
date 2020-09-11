@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { VideoslidePageRoutingModule } from './videoslide-routing.module';
 
 import { VideoslidePage } from './videoslide.page';
-import 'gl-ionic-background-video';
 
 
 @NgModule({
@@ -18,6 +17,6 @@ import 'gl-ionic-background-video';
     VideoslidePageRoutingModule
   ],
   declarations: [VideoslidePage],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class VideoslidePageModule {}

@@ -353,10 +353,10 @@
       <ion-label><img class="icon" src="assets/images/home-white.png" alt="Home"><span>Home</span></ion-label>
     </ion-button>
     <ion-button color="primary">
-      <ion-label><img class="icon" src="assets/images/user-white.png" alt="User"><span>Profile</span></ion-label>
+      <ion-label><img class="icon" src="assets/images/user-white.png" (click)="gotomyProfilepage()" alt="User"><span>Profile</span></ion-label>
     </ion-button>
     <ion-button color="primary">
-      <ion-label><img class="icon" src="assets/images/settings-white.png" alt="Settings"><span>Settings</span>
+      <ion-label><img class="icon" src="assets/images/settings-white.png" (click)="gotoSettingspage()" alt="Settings"><span>Settings</span>
       </ion-label>
     </ion-button>
   </ion-toolbar>

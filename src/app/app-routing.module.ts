@@ -30,7 +30,15 @@ const routes: Routes = [
   {
     path: 'videoslide',
     loadChildren: () => import('./pages/videoslide/videoslide.module').then(m => m.VideoslidePageModule)
+  },  {
+    path: 'myprofile',
+    loadChildren: () => import('./pages/myprofile/myprofile.module').then( m => m.MyprofilePageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
   }
+
 
 
 ];
