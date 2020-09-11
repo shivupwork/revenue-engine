@@ -13,12 +13,12 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Home', 
-      url: '/',
+      title: 'Home',
+      url: '/home',
       icon: 'home'
     },
     {
-      title: 'Intro', 
+      title: 'Intro',
       url: '/intro',
       icon: 'home'
     },
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
+      this.statusBar.backgroundColorByHexString('#44b839');
       this.splashScreen.hide();
     });
   }

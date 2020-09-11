@@ -9,7 +9,7 @@ import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-m
 })
 export class VideoslidePage implements OnInit {
 
-  skipvideo: boolean = true;
+  sampleVideo: any;
 
   constructor(
     private router: Router,
@@ -19,12 +19,14 @@ export class VideoslidePage implements OnInit {
   }
 
   ngOnInit() {
+    this.sampleVideo = <HTMLMediaElement>document.getElementById('sampleVideo');
+    this.sampleVideo.src = "assets/background-video/Revenue_Engine_Demo.mp4";
   }
 
   skipVideo() {
-    this.skipvideo = false;
+    this.sampleVideo.pause();
     this.router.navigate(['/question-start']);
-    console.log(this.skipvideo)
+
 
   }
 
