@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-question-start',
@@ -35,7 +36,11 @@ export class QuestionStartPage implements OnInit {
 
 
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) {
+
+  }
 
   ngOnInit() {
   }
@@ -190,6 +195,11 @@ export class QuestionStartPage implements OnInit {
     alert("Question Finshed !!")
   }
 
+  gotomyProfilepage() {
+    this.router.navigate(['/myprofile']);
+  }
+  gotoSettingspage() {
 
-
+    this.router.navigate(['/settings']);
+  }
 }
